@@ -17,7 +17,7 @@ end
 def assign_rooms(array)
     peoples_rooms = []
     count = 0
-    while count < people.length
+    while count < array.length
         peoples_rooms.push("Hello, #{people[count]}! You'll be assigned to room #{count + 1}.")
         count += 1
     end
