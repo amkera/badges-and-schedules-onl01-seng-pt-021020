@@ -1,4 +1,3 @@
-people = ['Edsger', 'Ada', 'Charles', 'Alan', 'Grace', 'Linus', 'Matz']
 
 def badge_maker(name)
     return "Hello, my name is #{name}."
@@ -35,6 +34,6 @@ def printer(array)
   end
 end 
 
-printer(people)
-
+printer(['Edsger', 'Ada', 'Charles', 'Alan', 'Grace', 'Linus', 'Matz']
+)
 # Write your code here.
