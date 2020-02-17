@@ -1,32 +1,42 @@
+people = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
 def badge_maker(name)
-  puts "Hello, my name is #{name}."
+  return "Hello, my name is #{name}."
 end
+
+
 
 def batch_badge_creator(array)
-    array.each do |name|
-        puts "Hello, my name is #{name}."
-    end
+  nuarray = []
+  array.each do |name|
+    nuarray.push("Hello, my name is #{name}.")
+  end
+  return nuarray
 end
 
-batch_badge_creator(['amber', 'toro', 'andrew'])
+# batch_badge_creator(people)
+
+
 
 def assign_rooms(array)
-    counter = 0
-    while counter < array.length
-        puts "Hello, #{array[counter]}! You'll be assigned to room #{counter + 1}!"
-        counter += 1
-    end
+  nuarray = []
+  counter = 1
+  array.each do |name|
+    nuarray.push("Hello, #{name}! You'll be assigned to room #{counter}!")
+    counter += 1
+  end
+  return nuarray
 end
 
-assign_rooms(['amber', 'toro', 'andrew'])
+# assign_rooms(people)
 
 def printer(array)
-    batch_badge_creator(array).each do |id|
-        puts id
-    end
-
-    assign_rooms(array).each do |id|
-        puts id
-    end
-end
+  batch_badge_creator(array).each do |id|
+    puts id
+  end 
+  
+  assign_rooms(array).each do |id|
+    puts id 
+  end
+end 
 
